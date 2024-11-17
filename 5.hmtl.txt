@@ -1,1 +1,145 @@
-<DOCTYPE html>
+<DOCTYPE html> 
+
+<html> 
+
+<style> 
+
+div {border: 3px solid black;} 
+
+ul.breadcrumb {list-style: none; padding: 1px;} 
+
+ul.breadcrumb li {display: inline;} 
+
+input {float: right;} 
+
+.sivupalkki {float: left;height: 2000px;width: 100px;display: inline;list-style: none;} 
+
+.oikea {float: left;height: 1700px;width: 1750px;list-style: none;} 
+
+.apply {display: table-row; list-style: none;} 
+
+.company {list-style: none;} 
+
+</style> 
+
+<body> 
+
+ 
+
+ 
+
+</body> 
+
+<div class="Mydiv"> 
+
+    <h2 style="border: 3px solid black; width: fit-content;">Logo</h2> 
+
+    <a href="Home.html">Home</a> 
+
+    <a href="Games.html">Games</a> 
+
+    <a href="About.html">About</a> 
+
+    <a href="Register.html">Register</a> 
+
+    <a href="Login.html">Login</a> 
+
+    <div class="Mydiv"> 
+
+        <ul class="breadcrumb"> 
+
+            <li><a href="#">About</a></li> 
+
+            <li>>Team</li> 
+
+            <input type="text" placeholder="Search" > 
+
+        </ul>     
+
+    </div> 
+
+    <div class="sivupalkki"> 
+
+        <li><a href="Team.html">Team</a></li> 
+
+        <li><a href="Location.html">Location</a></li> 
+
+        <li><a href="Contact.html">Contact</a></li> 
+
+    </div> 
+
+    <div class="oikea"> 
+
+        <h2>Our team</h2> 
+
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p> 
+
+        <img src="https://files.idyllic.app/files/static/348002" height="400";width="200"> 
+
+        <li><h1>Nimi ja Sukunimi</h1></li>  
+
+        <li><h2>Title</h2></li> 
+
+        <li><a href="email@domain.com">email@domain.com</a></li> 
+
+        <li><p>+35844xxxxxx</p></li> 
+
+        <li><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p></li> 
+
+ 
+
+    </div> 
+
+    <div class="apply"> 
+
+        <h1>Wanna join?</h1> 
+
+        <li><h3>Job title</h3></li> 
+
+        <li><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p></li> 
+
+        <li><a href="Apply.html">Apply</a></li> 
+
+        <li><h3>Job title</h3></li> 
+
+        <li><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></li> 
+
+        <li><a href="Apply.html">Apply</a></li> </div> 
+
+        <div class="company"> 
+
+        <h2>Your company's name</h2> 
+
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." </p> 
+
+        <p>© 2024, company name, all rights reserved</p> 
+
+        <a href="Home.html">Home</a> 
+
+        <a href="Games.html">Games</a> 
+
+        <a href="About.html">About</a> 
+
+        <a href="Register.html">Register</a> 
+
+        <a href="Login.html">Login</a> 
+
+        <a href="Facebook.html">Facebook</a> 
+
+        <a href="LinkedIn.html">LinkedIn</a> 
+
+        <a href="Github.html">Github</a> 
+
+</div> 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+</html> 
