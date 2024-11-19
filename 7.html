@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-
+.Header{border: 3x solid black;}
+input{float: right;}
+.w3-container{display: inline; list-style: none;}
+.first{border: 3px solid black;}
+.Second{border: 3px solid black;}
+.Home{border: 3px solid black;}
+.Bottom{border: 3px solid black; list-style: none;}
+/* For desktop:*/
+@media only screen and (max-width: 600px)
+{/* For mobile phones:*/}
 </style>
 <body>
     <div class="Header">
-        <h2>Logo</h2>
+        <!--Sidebar-->
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mysidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Ykkönen</a>
+        <a href="#" class="w3-bar-item w3-button">Kakkonen</a>
+        <a href="#" class="w3-bar-item w3-button">Kolmonen</a>
+        
+        
     </div>
 
+        <!--Page content-->
+        <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="w3-container">
+            <li><h2 style="border: solid black;text-align: center;padding: inherit; width: fit-content;">Logo</h2></li>
+            <li><input type="text" placeholder="Search"></li>
+            <li><button type="submit"><i class="fa fa search"></i></button></li>
+        </div>
+    </div>
+
+    <div class="Home">
+    <p>Home</p>
+    </div>
+    <div class="first">
+        <h2>A title for your firts article</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <img src="https://cdn.pixabay.com/photo/2023/12/01/19/11/bird-8424336_1280.jpg" width="100%">
+    </div>
+    <div class="Second">
+        <h2>A title for your second article</h2>
+        <img src="https://cdn.pixabay.com/photo/2016/05/01/21/20/earth-1365995_1280.jpg" width="100%">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+        
+    </div>
+
+
+    <div class="Bottom">
+        <h2>Your company's name</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+        <p>© 2024, company's name, all rights reserved  </p>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Games.html">Games</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Register.html">Register</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="Facebook.html">Facebook</a></li>
+        <li><a href="LinkedIn">LinkedIn</a></li>
+        <li><a href="Github.html">Github</a></li>
+    </div>
+    <script>
+        function w3_open() {
+            document.getElementById("mysidebar").style.display="block";
+            }
+        function w3_close() {
+            document.getElementById("mysidebar").style.display="None";
+            }
+        
+    </script>
 </body>
 </html>
