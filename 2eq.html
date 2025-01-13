@@ -1,14 +1,21 @@
 <script>
   // ax^2 + bx + c = 0
-  let a = -2
-  let b = 4
-  let c = 1
-  let d = b * b - 4 * a * c
-  if (d < 0)(
+  let a = prompt("Enter the value of a")
+  let b = prompt("Enter the value of b")
+  let c = prompt("Enter the value of c")
+  const s = (b* b) - 4*a*c)
+  if (d < 0){
+    // Todo homework show the complex solutions
+    // i = sqrt(-1)
     console.log("Wrong solution")
-    )
-  if (d = 0)(
-    console.log("Solution for x = -b * a * a")
-    )
-
+  }
+  else if (d == 0){
+    const x = -b / (2 * a)
+    console.log("Solution is " x)
+  }
+  else if (d > 0){
+    const x1 = (-b + Math.sqrt(d)) / (2 * a)
+    const x2 = (-b - Math.sqrt(d)) / (2 * a)
+    console.log("Solution is" x)
+  }
 </script>
