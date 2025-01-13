@@ -1,11 +1,10 @@
 <html> 
 <head> 
-  <body>
 <script>
   // ax^2 + bx + c = 0
-  let a = prompt("Enter the value of a")
-  let b = prompt("Enter the value of b")
-  let c = prompt("Enter the value of c")
+  let a = -2
+  let b = 4
+  let c = 1
   const s = (b* b) - 4*a*c)
   if (d < 0){
     // Todo homework show the complex solutions
@@ -21,7 +20,28 @@
     const x2 = (-b - Math.sqrt(d)) / (2 * a)
     console.log("Solution is" x)
   }
-  </body>
+
 </script>
+  <style>
+   .vertical-form{display:flex; flex-direction: column; gap: 1rem;
+  </style>
+      <body>
+<div class "vertical-form"> 
+  <div> 
+    <label>A:</label>
+<input id="a" type="text">
+  </div>
+  <div>
+    <label>B:</label>
+  <input id="b" type="text">
+  </div>
+  <div>
+    <label>C:</label>
+    <input id="c" type="text">
+  </div>
+  <input type="submit">
+  <label id ="x"></label>
+    </div>
+  </body>
   </head>
 </html>
