@@ -5,41 +5,61 @@
   let a = -2
   let b = 4
   let c = 1
-  const s = (b* b) - 4*a*c)
+  function computeEq2(a,b,c) {
+    console.log("Input value are", a,b,c)
+  const d = (b* b) - 4*a*c)
+  let result = null
   if (d < 0){
     // Todo homework show the complex solutions
     // i = sqrt(-1)
     console.log("Wrong solution")
+    result = ("The equation has no real solution")
+    
   }
   else if (d == 0){
     const x = -b / (2 * a)
-    console.log("Solution is " x)
+    console.log("THe solution is", x)
+  document.getElemntById("x").innerText = "The solutions is" + x
   }
   else if (d > 0){
     const x1 = (-b + Math.sqrt(d)) / (2 * a)
     const x2 = (-b - Math.sqrt(d)) / (2 * a)
-    console.log("Solution is" x)
+    console.log("Solutions are" ,x1 "and", x2)
+    result = ("The solutions are", x1 "and", x2)
   }
+  
+funtion handleButtonClick () {
+  
+  const elementA = document.getElementById("a")
+  const a = elementA.value
+  console.log("A is",a)
+  document.getElementById("b").value
+  document.getElementById("c").value
 
+  const solution = computeEq2(a,b,c)
+  document.getElementById("x").innerText = solution
+
+  document.getElementById("x").innerText = computeEq2(a,b,c)
+}
 </script>
   <style>
-   .vertical-form{display:flex; flex-direction: column; gap: 1rem;
+   .vertical-form{display:flex; flex-direction: column; gap: 1rem; margin-left: 2rem;}
   </style>
       <body>
 <div class "vertical-form"> 
   <div> 
     <label>A:</label>
-<input id="a" type="text">
+<input id="a" type="text value="-2" placeholder"Enter the value of a">
   </div>
   <div>
-    <label>B:</label>
+    <label>B:</label value="4">
   <input id="b" type="text">
   </div>
   <div>
-    <label>C:</label>
+    <label>C:</label value="1">
     <input id="c" type="text">
   </div>
-  <input type="submit">
+  <input type="submit" onclick="handleButtonClick()">
   <label id ="x"></label>
     </div>
   </body>
