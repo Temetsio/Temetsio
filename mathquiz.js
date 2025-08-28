@@ -142,5 +142,27 @@ function handleOnLoad() {
   correctCount = 0;
   setupQuestion();
 }
+function saveScoreAndShowLeaderboard(playerName, playerScore) {
+  const leaderboard = JSON.parse(localStorage.getItem("leaderboard") ||  "[]");
+  leaderboard.push({ name: playerName, score: playerScore });
+  leaderboard.sort((a,b) =>  b.score - a.score);
+  localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
+  displayLeaderboard("Leaderboard");
+  function displayLeaderboard(Leaderboard) {
+    const root = documentgetElementById("root);
+    root.innerHtml = "<h2>Leaderboard</h2>";
+    if (leaderboard.length === 0) {
+      root.innerHTML += "<p>No score yet.</p>"
+      return
+  }
+  const list = document.createElement("ol");
+    leaderboard.forEach(entry => {
+      const li = document.createElement("li");
+      li.textContent = `${entry.name} - ${entry.score}`;
+      list.appendChild(li);
+    });
+    root.appendChild(list);
+  }
 
 window.addEventListener("load", handleOnLoad);
+
