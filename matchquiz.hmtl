@@ -1,0 +1,7 @@
+<div id="quiz-container">
+  <div id="question"></div>
+  <input type="text" id="answer" />
+  <button id="submit-btn">Submit</button>
+  <button id="continue-btn" style="display:none;">Continue</button>
+  <div id="result"></div>
+</div>
