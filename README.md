@@ -10,4 +10,4 @@
 <h3>My personal projects</h3>
 <p>I currently plan to make a game based on the sega series Dinosaur King</p>
 
-<p>© Teemu</p>
+<p>© Temetsi</p>
